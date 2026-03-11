@@ -8,8 +8,13 @@ fi
 
 # List of users that will be excluded
 user_list=(
-  "whiteteam" "datadog"
+    "whiteteam" "datadog"
 )
+
+    # Input new password to be used on new accounts
+    read -s -p "Enter new password for users: " new_pass
+    echo
+
 
 # Loop through all users on the device
 while IFS=':' read -r username pass _; do
@@ -21,11 +26,6 @@ while IFS=':' read -r username pass _; do
         continue
     fi
 
-    # Input new password to be used on new accounts
-    read -s -p "Enter new password for '$username': " new_pass
-    echo
-
-    
     if printf "%s\n" "${user_list[@]}" | grep -qxF "$username"; then
         echo "'$username' is approved."
 
