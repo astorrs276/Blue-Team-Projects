@@ -11,9 +11,9 @@ user_list=(
     "whiteteam" "datadog"
 )
 
-    # Input new password to be used on new accounts
-    read -s -p "Enter new password for users: " new_pass
-    echo
+# Input new password to be used on new accounts
+read -s -p "Enter new password for users: " new_pass
+echo
 
 
 # Loop through all users on the device
