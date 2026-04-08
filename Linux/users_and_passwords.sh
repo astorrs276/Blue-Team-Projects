@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ERROR
+# All read statements pull from the input to the file which is /etc/passwd
+# Must find some other way to read through /etc/passwd and get user input at the same time
+# Also add a confirm right before changing users's passwords (line 50)
+
 # Check if running as root and exit if not
 if [ "$(id -u)" -ne 0 ]; then
     echo "users.sh run fail"
