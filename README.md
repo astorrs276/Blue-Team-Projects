@@ -20,6 +20,7 @@ users_and_passwords.sh
 
 ## Scripts to Write
 \[Windows\] Automatically download and rename specific sysinternals tools (autoruns, procmon, not sure what others)
+\[Both\] Remove malicious SSH keys (often all of them lol)
 \[Both\] Make copies of important files
 \[Both\] Make a user group for the users you need for the comp (then integrate with users_and_passwords)
 \[Both\] Set up firewall rules (varies per comp and the organizer's rules but always important) - things like blocking IPs, blocking ports, and removing remote connections - specifically block basically everything but scored services
